@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'about', to:'about#index'
   root to: 'products#index'
 
   resources :products, only: [:index, :show]
@@ -29,7 +30,7 @@ Rails.application.routes.draw do
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
+  # Example resource route (maps HTTP verbs to controllindexer actions automatically):
   #   resources :products
 
   # Example resource route with options:
